@@ -123,15 +123,6 @@
       </div>
     </div>
   </section>
- 
-n>
-
-
-
-
-
-
-
 
 
     <!-- CoursesSection -->
@@ -147,9 +138,10 @@ n>
         </p>
         <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
 
+
           <!-- DSA with C++ Card -->
           <div
-            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col" data-aos="fade-up">
             <div class="flex items-center gap-4 mb-4">
               <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
                 <i data-lucide="code-2" class="text-primary w-6 h-6"></i>
@@ -193,7 +185,8 @@ n>
                 Placement & Interview Support
               </li>
             </ul>
-            <div class="mt-auto flex flex-col justify-end pt-1">
+            
+            <div class="mt-6 flex flex-col justify-end pt-1">
               <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
                 <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
                 <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
@@ -210,7 +203,7 @@ n>
 
           <!-- Web Development Card -->
           <div
-            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col" data-aos="fade-up" data-aos-delay="100">
             <div class="flex items-center gap-4 mb-4">
               <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
                 <i data-lucide="monitor" class="text-primary w-6 h-6"></i>
@@ -254,8 +247,9 @@ n>
                 Placement & Interview Support
               </li>
             </ul>
-            <div class="mt-auto flex flex-col justify-end pt-1">
-              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+            
+            <div class="mt-6 flex flex-col justify-end pt-1">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-3">
                 <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
                 <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
                     fill="currentColor"></i> Certificate</div>
@@ -271,7 +265,7 @@ n>
 
           <!-- App Development Card -->
           <div
-            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col" data-aos="fade-up" data-aos-delay="200">
             <div class="flex items-center gap-4 mb-4">
               <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
                 <i data-lucide="smartphone" class="text-primary w-6 h-6"></i>
@@ -307,6 +301,60 @@ n>
               <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
                 <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
                   stroke-width="2"></i>
+                Build, Test, Deploy
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            
+            <div class="mt-4 flex flex-col justify-end">
+
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-3">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="training/app-development/index.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Science Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col" data-aos="fade-up">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="bar-chart" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Data Science</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Learn to analyze data, build predictive models, and extract actionable insights. Master Python, Pandas,
+              and
+              SQL.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Python & Libraries
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Data Visualization
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
                 SQL for Data Science
               </li>
               <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
@@ -326,8 +374,10 @@ n>
                 Placement & Interview Support
               </li>
             </ul>
-            <div class="mt-auto flex flex-col justify-end pt-1">
-              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+            
+            <div class="mt-4 flex flex-col justify-end">
+
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-3">
                 <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
                 <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
                     fill="currentColor"></i> Certificate</div>
@@ -343,7 +393,7 @@ n>
 
           <!-- DSA with Java Card -->
           <div
-            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col" data-aos="fade-up" data-aos-delay="100">
             <div class="flex items-center gap-4 mb-4">
               <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
                 <i data-lucide="coffee" class="text-primary w-6 h-6"></i>
@@ -387,8 +437,10 @@ n>
                 Placement & Interview Support
               </li>
             </ul>
+            
             <div class="mt-4 flex flex-col justify-end">
-              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-3">
                 <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
                 <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
                     fill="currentColor"></i> Certificate</div>
@@ -404,7 +456,7 @@ n>
 
           <!-- AI / ML Card -->
           <div
-            class="border border-border rounded-xl pt-6 px-6 pb-2 hover:shadow-lg transition-shadow bg-card flex flex-col">
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col" data-aos="fade-up" data-aos-delay="200">
             <div class="flex items-center gap-4 mb-4">
               <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
                 <i data-lucide="brain" class="text-primary w-6 h-6"></i>
@@ -448,7 +500,7 @@ n>
                 Placement & Interview Support
               </li>
             </ul>
-            <div class="mt-4 flex flex-col justify-end">
+            <div class="mt-6 flex flex-col justify-end pt-1">
               <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
                 <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
                 <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
@@ -462,6 +514,7 @@ n>
               </div>
             </div>
           </div>
+
 
         </div>
       </div>
@@ -1458,7 +1511,7 @@ n>
 
     <!-- Footer -->
     <footer class="bg-foreground text-primary-foreground py-12 border-t border-border">
-      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
 
         <!-- Brand & Description -->
         <div class="space-y-4">
@@ -1530,6 +1583,9 @@ n>
             </li>
           </ul>
         </div>
+
+        <!-- Empty column for layout consistency -->
+        <div></div>
 
       </div>
 
