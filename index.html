@@ -20,6 +20,33 @@
 
   <!-- Lucide Icons via CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); }
+      50% { box-shadow: 0 0 30px rgba(255, 255, 255, 0.4); }
+    }
+    .animate-pulse-glow {
+      animation: pulse-glow 3.5s ease-in-out infinite;
+    }
+    .animate-pulse-glow {
+      animation: pulse-glow 3.5s ease-in-out infinite;
+    }
+    /* Simple Banner Styles */
+    .bg-brand-green {
+      background-color: #10b981;
+    }
+    .badge-simple {
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 9999px;
+      padding: 2px 12px;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
+    }
+  </style>
 </head>
 
 <body class="min-h-screen bg-background text-foreground overflow-x-hidden w-full">
@@ -39,7 +66,7 @@
         <a href="courses/index.html"
           class="text-foreground hover:text-primary transition-colors font-semibold">Courses</a>
         <a href="about/index.html" class="text-foreground hover:text-primary transition-colors font-semibold">About</a>
-        <a href="#enroll"
+        <a href="#courses"
           class="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity">
           Start Learning &gt;
         </a>
@@ -54,7 +81,7 @@
       <a href="training/index.html" class="py-2 text-foreground font-semibold mobile-link">Training</a>
       <a href="courses/index.html" class="py-2 text-foreground font-semibold mobile-link">Courses</a>
       <a href="about/index.html" class="py-2 text-foreground font-semibold mobile-link">About</a>
-      <a href="#enroll"
+      <a href="#courses"
         class="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold text-center mobile-link">
         Start Learning &gt;
       </a>
@@ -124,9 +151,83 @@
     </div>
   </section>
 
+  <!-- Summer Special Banner (High Fidelity) -->
+  <section class="py-0 mt-[40px] mb-[40px] bg-background font-sans">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 items-stretch">
+        
+        <!-- Left Container: Value Prop -->
+        <div class="bg-[#3bb775] rounded-[24px] flex flex-col sm:flex-row items-center p-6 md:p-8 min-h-[160px] shadow-sm transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-md" data-aos="fade-right">
+          
+
+          <!-- Text Area -->
+          <div class="sm:ml-6 flex flex-col justify-center text-center sm:text-left">
+             <h3 class="text-white font-black text-[26px] md:text-[28px] leading-[1.2] uppercase tracking-wide">
+                UTILIZE YOUR<br/>
+                <span class="text-[#fcae41]">SUMMER BREAK.</span>
+             </h3>
+             <p class="text-white font-bold text-[10px] md:text-[11px] tracking-widest mt-2 uppercase">SECURE YOUR PLACEMENT TODAY</p>
+             <div class="mt-4 flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-2">
+                <span class="flex items-center gap-1.5 bg-[#29955e] border border-[#238051]/30 text-white text-[10px] md:text-[11px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm whitespace-nowrap">
+                   <i data-lucide="zap" class="w-3.5 h-3.5 text-[#fcae41]"></i> Early Bird Offer
+                </span>
+                <span class="flex items-center gap-1.5 bg-[#29955e] border border-[#238051]/30 text-white text-[10px] md:text-[11px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm whitespace-nowrap">
+                   <i data-lucide="timer" class="w-3.5 h-3.5 text-[#fcae41]"></i> Limited Seats
+                </span>
+                <span class="flex items-center gap-1.5 bg-[#29955e] border border-[#238051]/30 text-white text-[10px] md:text-[11px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm whitespace-nowrap">
+                   <i data-lucide="rocket" class="w-3.5 h-3.5 text-[#fcae41]"></i> Next Batch Soon
+                </span>
+             </div>
+          </div>
+        </div>
+
+        <!-- Right Container: Pricing Offer -->
+        <div class="bg-[#3bb775] rounded-[24px] flex flex-row items-center p-6 md:p-8 min-h-[160px] shadow-sm transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-md justify-between" data-aos="fade-left">
+          
+          <!-- Text Area -->
+          <div class="flex flex-col">
+             <span class="text-white font-bold text-[10px] md:text-[11px] tracking-[0.2em] uppercase mb-1">ENROLL NOW & SAVE</span>
+             <div class="flex items-end gap-3 leading-none mt-1">
+               <h2 class="text-6xl md:text-7xl font-black text-white tracking-tighter leading-[0.8] m-0 p-0">
+                 78%
+               </h2>
+               <div class="flex flex-col pb-1 md:pb-1.5">
+                   <span class="text-[#fcae41] text-4xl md:text-5xl font-black tracking-tight leading-[0.8] m-0 p-0">OFF</span>
+                   <div class="h-[4px] bg-[#68c292] w-full mt-2 mr-auto rounded-[2px]"></div>
+               </div>
+             </div>
+             
+             <div class="mt-4 md:mt-5 inline-flex">
+               <div class="bg-[#29955e] border border-[#238051]/50 text-white tracking-wide px-3 py-1.5 md:px-4 md:py-2 rounded-[8px] flex items-center gap-2 md:gap-3 font-medium shadow-sm">
+                 <span class="font-bold text-white/70 line-through text-[11px] md:text-[12px]">₹6,999</span>
+                 <span class="font-black text-[16px] md:text-[20px] text-[#fcae41]">₹1,499</span>
+                 <span class="text-white/90 text-[10px] md:text-[11px] font-bold">ON ALL COURSES</span>
+               </div>
+             </div>
+          </div>
+
+          <!-- Arrow Button -->
+          <div class="flex-shrink-0 ml-4 hidden sm:block">
+             <a href="#courses" class="w-16 h-16 md:w-[76px] md:h-[76px] rounded-full border-[1.5px] border-white/40 flex items-center justify-center group hover:bg-white/10 transition-all">
+                <i data-lucide="arrow-right" class="text-white w-6 h-6 md:w-8 md:h-8 group-hover:translate-x-1 transition-transform"></i>
+             </a>
+          </div>
+          
+          <!-- Mobile Arrow Button (smaller) -->
+          <div class="flex-shrink-0 ml-2 sm:hidden flex self-center">
+             <a href="#courses" class="w-12 h-12 rounded-full border-[1.5px] border-white/40 flex items-center justify-center group hover:bg-white/10 transition-all">
+                <i data-lucide="arrow-right" class="text-white w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+             </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
 
     <!-- CoursesSection -->
-    <section id="courses" class="py-16 bg-background">
+    <section id="courses" class="pt-0 pb-16 bg-background">
       <div class="max-w-7xl mx-auto px-4">
         <h2 class="text-2xl md:text-3xl font-bold text-center text-foreground">
           <span class="text-primary">Industrial</span> Training Programs
@@ -148,7 +249,7 @@
               </div>
               <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">DSA with C++</h3>
             </div>
-            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+            <p class="text-[15px] font-medium text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
               Master Data Structures and Algorithms from scratch using C++. Build problem-solving skills for top tech
               companies.
             </p>
@@ -210,7 +311,7 @@
               </div>
               <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Web Development</h3>
             </div>
-            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+            <p class="text-[15px] font-medium text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
               Master full-stack development with HTML, CSS, JavaScript, React, Node.js, and databases. Build responsive
               websites and web applications.
             </p>
@@ -272,7 +373,7 @@
               </div>
               <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">App Development</h3>
             </div>
-            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+            <p class="text-[15px] font-medium text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
               Build cross-platform mobile apps with Flutter and React Native. Learn UI/UX principles, APIs, and
               publishing
               to app stores.
@@ -336,7 +437,7 @@
               </div>
               <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Data Science</h3>
             </div>
-            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+            <p class="text-[15px] font-medium text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
               Learn to analyze data, build predictive models, and extract actionable insights. Master Python, Pandas,
               and
               SQL.
@@ -400,7 +501,7 @@
               </div>
               <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">DSA with Java</h3>
             </div>
-            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+            <p class="text-[15px] font-medium text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
               Master Data Structures and Algorithms using Java. Essential for cracking interviews at top product-based
               companies.
             </p>
@@ -1134,7 +1235,7 @@
           <!-- Connector Line (Desktop) -->
           <div class="hidden lg:block absolute top-[40px] left-0 w-full h-0.5 border-t-2 border-dashed border-primary/20 z-0"></div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 relative z-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 relative z-10">
             
             <!-- Step 1 -->
             <div class="group roadmap-step flex flex-col items-center text-center px-4 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
@@ -1502,7 +1603,7 @@
         <p class="mt-3 text-muted-foreground">
           Join thousands of learners and upgrade your skills.
         </p>
-        <a href="#enroll"
+        <a href="#courses"
           class="mt-6 inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity">
           Start Learning Now &gt;
         </a>
@@ -1510,8 +1611,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-foreground text-primary-foreground py-12 border-t border-border">
-      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+    <footer class="bg-foreground text-primary-foreground py-12 border-t border-border mt-16 font-sans">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
 
         <!-- Brand & Description -->
         <div class="space-y-4">
@@ -1583,9 +1684,6 @@
             </li>
           </ul>
         </div>
-
-        <!-- Empty column for layout consistency -->
-        <div></div>
 
       </div>
 
