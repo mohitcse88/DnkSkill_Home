@@ -78,29 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Mentors Carousel Navigation
-    const mentorsPrevBtn = document.getElementById('mentors-prev');
-    const mentorsNextBtn = document.getElementById('mentors-next');
-    const mentorsCarousel = document.getElementById('mentors-carousel');
-
-    if (mentorsPrevBtn && mentorsNextBtn && mentorsCarousel) {
-        mentorsNextBtn.addEventListener('click', () => {
-            // Find the width of one card + gap (24px)
-            const firstCard = mentorsCarousel.querySelector('div');
-            if (firstCard) {
-                const scrollAmount = firstCard.offsetWidth + 24;
-                mentorsCarousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-            }
-        });
-
-        mentorsPrevBtn.addEventListener('click', () => {
-            const firstCard = mentorsCarousel.querySelector('div');
-            if (firstCard) {
-                const scrollAmount = firstCard.offsetWidth + 24;
-                mentorsCarousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-            }
-        });
-    }
 
     // --- Dynamic AOS (Animate On Scroll) Setup ---
 
@@ -166,5 +143,132 @@ document.addEventListener('DOMContentLoaded', () => {
             roadmapIndex = 0;
             startRoadmapLoop();
         });
+    }
+
+    // --- Premium LMS Showcase Logic ---
+    const lmsTabs = document.querySelectorAll('.lms-tab');
+    const lmsImages = [
+        document.getElementById('tab-img-0'),
+        document.getElementById('tab-img-1'),
+        document.getElementById('tab-img-2'),
+        document.getElementById('tab-img-3')
+    ];
+
+    if (lmsTabs.length > 0) {
+        let currentLmsTab = 0;
+        let lmsAutoplayInterval;
+
+        const activateLmsTab = (index) => {
+            lmsTabs.forEach((tab, i) => {
+                const progressBar = tab.querySelector('.lms-progress');
+                const arrow = tab.querySelector('.lms-arrow');
+                const iconContainer = tab.querySelector('div.rounded-full');
+
+                if (i === index) {
+                    // Set active
+                    tab.classList.remove('border-border', 'bg-card', 'hover:border-primary/50');
+                    tab.classList.add('border-primary', 'bg-primary/5', 'shadow-sm', 'active');
+                    if (arrow) {
+                        arrow.classList.remove('opacity-0');
+                        arrow.classList.add('opacity-100');
+                    }
+
+                    // Active Icon styles
+                    if (iconContainer) {
+                        iconContainer.classList.remove('bg-secondary', 'text-primary/70');
+                        iconContainer.classList.add('bg-white', 'text-primary', 'shadow-sm');
+                    }
+
+                    // Start progress animation
+                    if (progressBar) {
+                        progressBar.style.transition = 'none';
+                        progressBar.style.width = '0%';
+                        void progressBar.offsetWidth; // force reflow
+                        progressBar.style.transition = lmsAutoplayInterval ? 'width 4000ms linear' : 'width 300ms ease';
+                        progressBar.style.width = '100%';
+                    }
+
+                    // Show image
+                    if (lmsImages[i]) {
+                        lmsImages[i].classList.remove('opacity-0');
+                        lmsImages[i].classList.add('opacity-100');
+                    }
+                } else {
+                    // Set inactive
+                    tab.classList.add('border-border', 'bg-card', 'hover:border-primary/50');
+                    tab.classList.remove('border-primary', 'bg-primary/5', 'shadow-sm', 'active');
+                    if (arrow) {
+                        arrow.classList.remove('opacity-100');
+                        arrow.classList.add('opacity-0');
+                    }
+
+                    // Inactive Icon styles
+                    if (iconContainer) {
+                        iconContainer.classList.add('bg-secondary', 'text-primary/70');
+                        iconContainer.classList.remove('bg-white', 'text-primary', 'shadow-sm');
+                    }
+
+                    // Reset progress animation
+                    if (progressBar) {
+                        progressBar.style.transition = 'none';
+                        progressBar.style.width = '0%';
+                    }
+
+                    // Hide image
+                    if (lmsImages[i]) {
+                        lmsImages[i].classList.remove('opacity-100');
+                        lmsImages[i].classList.add('opacity-0');
+                    }
+                }
+            });
+            currentLmsTab = index;
+        };
+
+        const startLmsCycle = () => {
+            if (lmsAutoplayInterval) clearInterval(lmsAutoplayInterval);
+            lmsAutoplayInterval = setInterval(() => {
+                let nextTab = (currentLmsTab + 1) % lmsTabs.length;
+                activateLmsTab(nextTab);
+            }, 4000);
+        };
+
+        const stopLmsCycle = () => {
+            clearInterval(lmsAutoplayInterval);
+            lmsAutoplayInterval = null;
+            // Keep the progress bar full for the current active tab
+            const activeBar = lmsTabs[currentLmsTab].querySelector('.lms-progress');
+            if (activeBar) {
+                activeBar.style.transition = 'width 300ms ease';
+                activeBar.style.width = '100%';
+            }
+        };
+
+        // Click interaction
+        lmsTabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                stopLmsCycle();
+                activateLmsTab(index);
+            });
+
+            // Re-start cycle on mouse leave if we want it to continue? 
+            // The user said "automatic hove hota hai", usually means it cycles automatically.
+            // Let's make it pause on hover and resume on leave for better UX.
+            tab.addEventListener('mouseenter', () => {
+                stopLmsCycle();
+                activateLmsTab(index);
+            });
+        });
+
+        const lmsSection = document.querySelector('.lms-tab')?.closest('.grid');
+        if (lmsSection) {
+            lmsSection.addEventListener('mouseleave', () => {
+                startLmsCycle();
+                activateLmsTab(currentLmsTab);
+            });
+        }
+
+        // Initialize
+        activateLmsTab(0);
+        startLmsCycle();
     }
 });
