@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <title>DNK SKILL - Start Learning Now</title>
 
   <!-- External CSS -->
@@ -49,7 +49,7 @@
   </style>
 </head>
 
-<body class="min-h-screen bg-background text-foreground overflow-x-hidden w-full">
+<body class="min-h-screen bg-background text-foreground overflow-x-hidden w-full relative">
 
   <!-- Navbar -->
   <nav class="sticky top-0 z-50 bg-background border-b border-border">
@@ -742,7 +742,7 @@
 
             <!-- Live Badge -->
             <div
-              class="absolute -top-3 -right-3 md:-top-5 md:-right-5 z-30 bg-[#1a1a1a] border border-[#333] text-white text-[10px] sm:text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2 shadow-xl shadow-black/50 animate-[bounce_3s_infinite]">
+              class="absolute -top-3 right-0 md:-top-5 md:-right-5 z-30 bg-[#1a1a1a] border border-[#333] text-white text-[10px] sm:text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2 shadow-xl shadow-black/50 animate-[bounce_3s_infinite]">
               <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
               Live Preview
             </div>
@@ -782,7 +782,7 @@
               </div>
 
               <!-- HP Laptop Base -->
-              <div class="relative w-[114%] -left-[7%] h-3 md:h-6 bg-gradient-to-b from-[#707070] to-[#2a2a2a] rounded-b-[0.5rem] md:rounded-b-[1rem] z-20 border-t border-white/10 shadow-xl">
+              <div class="relative w-full sm:w-[114%] sm:-left-[7%] h-3 md:h-6 bg-gradient-to-b from-[#707070] to-[#2a2a2a] rounded-b-[0.5rem] md:rounded-b-[1rem] z-20 border-t border-white/10 shadow-xl">
                  <!-- Hinge detail -->
                  <div class="absolute top-0 left-[10%] right-[10%] h-1 bg-black/20"></div>
                  <!-- Opening notch -->
@@ -1251,7 +1251,7 @@
 
         <div class="relative">
           <!-- Central Desktop Line / Left Mobile Line -->
-          <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 border-l-2 border-dashed border-primary/30 -translate-x-1/2"></div>
+          <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 border-l-2 border-dashed border-primary/30 -translate-x-1/2 pointer-events-none"></div>
 
           <div class="space-y-16 lg:space-y-24">
             
