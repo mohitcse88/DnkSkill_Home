@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>DNK SKILL - Start Learning Now</title>
 
   <!-- External CSS -->
@@ -25,35 +25,45 @@
 <body class="min-h-screen bg-background text-foreground overflow-x-hidden w-full">
 
   <!-- Navbar -->
-  <nav class="sticky top-0 z-50 bg-background border-b border-border">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2 font-bold text-xl text-foreground">
-        <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
-        <span class="font-extrabold tracking-wide text-foreground"
-          style="font-family: Arial, sans-serif; font-size: 22px;">DNK SKILLS</span>
+  <nav class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm relative w-full">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between relative">
+      <!-- Logo (Left) -->
+      <a href="../index.html#home" class="flex items-center gap-2 group shrink-0 relative z-10 transition-transform active:scale-95">
+        <div class="w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-all">
+          <i data-lucide="flame" class="text-primary" style="width: 22px; height: 22px; stroke-width: 2.5;"></i>
+        </div>
+        <span class="font-black tracking-tighter text-slate-900 text-[20px] md:text-[22px]" style="font-family: Arial, sans-serif;">DNK SKILLS</span>
       </a>
-      <div class="hidden md:flex items-center gap-8">
-        <a href="../index.html" class="text-foreground hover:text-primary transition-colors font-semibold">Home</a>
-        <a href="index.html" class="text-primary hover:text-primary transition-colors font-semibold">Training</a>
-        <a href="../courses/index.html" class="text-foreground hover:text-primary transition-colors font-semibold">Courses</a>
-        <a href="../about/index.html" class="text-foreground hover:text-primary transition-colors font-semibold">About</a>
-        <a href="../index.html#courses"
-          class="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+
+      <!-- Navigation Links (Mathematical Center) -->
+      <div class="hidden md:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
+        <a href="../index.html" class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">Home</a>
+        <a href="index.html" class="text-primary hover:text-primary transition-colors font-bold text-[15px]">Training</a>
+        <a href="../courses/index.html" class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">Courses</a>
+        <a href="../about/index.html" class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">About</a>
+      </div>
+
+      <!-- CTA Button (Right) -->
+      <div class="hidden md:block shrink-0 relative z-10">
+        <a href="../index.html#courses" class="bg-[#29965a] text-white px-6 py-2.5 rounded-lg font-bold text-[15px] hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-95">
           Start Learning &gt;
         </a>
       </div>
-      <button id="mobile-menu-btn" class="md:hidden">
-        <i id="menu-icon" data-lucide="menu" style="width: 24px; height: 24px;"></i>
-        <i id="close-icon" data-lucide="x" style="width: 24px; height: 24px;" class="hidden"></i>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-50 transition-colors relative z-10">
+        <i id="menu-icon" data-lucide="menu" class="w-6 h-6 text-slate-900"></i>
+        <i id="close-icon" data-lucide="x" class="w-6 h-6 text-slate-900 hidden"></i>
       </button>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden border-t border-border px-4 pb-4 flex-col gap-3">
-      <a href="../index.html" class="py-2 text-foreground font-semibold mobile-link">Home</a>
-      <a href="index.html" class="py-2 text-primary font-semibold mobile-link">Training</a>
-      <a href="../courses/index.html" class="py-2 text-foreground font-semibold mobile-link">Courses</a>
-      <a href="../about/index.html" class="py-2 text-foreground font-semibold mobile-link">About</a>
-      <a href="../index.html#courses"
-        class="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold text-center mobile-link">
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-50 px-4 py-6 flex-col gap-4 shadow-xl">
+      <a href="../index.html" class="text-lg font-bold text-slate-800 mobile-link">Home</a>
+      <a href="index.html" class="text-lg font-bold text-primary mobile-link">Training</a>
+      <a href="../courses/index.html" class="text-lg font-bold text-slate-800 mobile-link">Courses</a>
+      <a href="../about/index.html" class="text-lg font-bold text-slate-800 mobile-link">About</a>
+      <a href="../index.html#courses" class="mt-4 bg-[#29965a] text-white px-6 py-4 rounded-xl font-bold text-center shadow-lg shadow-primary/20 mobile-link">
         Start Learning &gt;
       </a>
     </div>

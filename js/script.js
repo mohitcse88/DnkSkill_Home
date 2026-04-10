@@ -5,16 +5,16 @@ tailwind.config = {
             colors: {
                 border: "hsl(210 20% 90%)",
                 input: "hsl(210 20% 90%)",
-                ring: "hsl(145 45% 32%)",
+                ring: "hsl(163 88% 20%)",
                 background: "hsl(0 0% 100%)",
                 foreground: "hsl(220 20% 15%)",
                 primary: {
-                    DEFAULT: "hsl(145 45% 32%)",
+                    DEFAULT: "#059669",
                     foreground: "hsl(0 0% 100%)",
                 },
                 secondary: {
-                    DEFAULT: "hsl(145 30% 95%)",
-                    foreground: "hsl(145 45% 32%)",
+                    DEFAULT: "hsl(163 30% 95%)",
+                    foreground: "#065f46",
                 },
                 muted: {
                     DEFAULT: "hsl(210 20% 96%)",
@@ -24,7 +24,7 @@ tailwind.config = {
                     DEFAULT: "hsl(0 0% 100%)",
                     foreground: "hsl(220 20% 15%)",
                 },
-                hero: "hsl(145 25% 96%)",
+                hero: "#f3fbf8",
             },
             borderRadius: {
                 lg: "0.5rem",
