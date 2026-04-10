@@ -14,7 +14,7 @@
   <nav class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm relative w-full">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between relative">
       <!-- Logo (Left) -->
-      <a href="../../index.html" class="flex items-center gap-2 group shrink-0 relative z-10 transition-transform active:scale-95">
+      <a href="../../index.html#home" class="flex items-center gap-2 group shrink-0 relative z-10 transition-transform active:scale-95">
         <div class="w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-all">
           <i data-lucide="flame" class="text-primary" style="width: 22px; height: 22px; stroke-width: 2.5;"></i>
         </div>
@@ -31,8 +31,11 @@
 
       <!-- CTA Button (Right) -->
       <div class="hidden md:block shrink-0 relative z-10">
-        <a href="#enrollMenu" class="bg-[#29965a] text-white px-6 py-2.5 rounded-lg font-bold text-[15px] hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-95" onclick="document.getElementById('enrollmentForm').scrollIntoView({behavior: 'smooth'})">
-          Start Learning &gt;
+        <a href="#enrollMenu" class="group relative bg-[#29965a] text-white px-6 py-2.5 rounded-lg font-bold text-[15px] hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 ring-2 ring-emerald-500/20 hover:ring-emerald-500/50 ring-offset-2 ring-offset-white overflow-hidden z-10" onclick="document.getElementById('enrollmentForm').scrollIntoView({behavior: 'smooth'})">
+          <span class="relative z-10 flex items-center gap-1.5">
+            Start Learning &gt;
+          </span>
+          <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
         </a>
       </div>
 
@@ -49,8 +52,11 @@
       <a href="../../training/index.html" class="text-lg font-bold text-primary mobile-link">Training</a>
       <a href="../../courses/index.html" class="text-lg font-bold text-slate-800 mobile-link">Courses</a>
       <a href="../../about/index.html" class="text-lg font-bold text-slate-800 mobile-link">About</a>
-      <a href="#enrollMenu" class="mt-4 bg-[#29965a] text-white px-6 py-4 rounded-xl font-bold text-center shadow-lg shadow-primary/20 mobile-link" onclick="document.getElementById('enrollmentForm').scrollIntoView({behavior: 'smooth'})">
-        Start Learning &gt;
+      <a href="#enrollMenu" class="group relative mt-4 bg-[#29965a] text-white px-6 py-4 rounded-xl font-bold text-center shadow-lg shadow-primary/20 hover:-translate-y-1 transition-all duration-300 ring-2 ring-emerald-500/20 hover:ring-emerald-500/50 ring-offset-4 ring-offset-white overflow-hidden z-10" onclick="document.getElementById('enrollmentForm').scrollIntoView({behavior: 'smooth'})">
+        <span class="relative z-10">
+          Start Learning &gt;
+        </span>
+        <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
       </a>
     </div>
   </nav>
@@ -73,7 +79,7 @@
       <div class="grid lg:grid-cols-12 gap-8 lg:gap-12">
         <div class="lg:col-span-8 space-y-8 lg:space-y-12">
           <div class="bg-card border border-border rounded-2xl shadow-sm p-6 md:p-10 space-y-10 lg:space-y-12">
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6 pb-8 border-b border-border">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 pb-8 border-b border-border">
               <div class="bg-primary/5 rounded-xl p-4 border border-primary/10">
                 <i data-lucide="calendar" class="w-6 h-6 text-primary mb-2"></i>
                 <div class="text-xs md:text-sm text-muted-foreground font-medium mb-1">Duration</div>
@@ -211,10 +217,10 @@
   <footer class="bg-foreground text-primary-foreground py-12 border-t border-border">
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
       <div class="space-y-4">
-        <div class="flex items-center gap-2 font-bold text-2xl">
+        <a href="../../index.html#home" class="flex items-center gap-2 font-bold text-2xl group transition-transform active:scale-95">
           <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
           <span class="font-extrabold tracking-wide text-white">DNK SKILLS</span>
-        </div>
+        </a>
         <p class="text-[15px] text-muted-foreground leading-relaxed mt-2">Empowering the future through innovative education.</p>
       </div>
       <div>

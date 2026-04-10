@@ -27,19 +27,22 @@
   <!-- Navbar -->
   <nav class="sticky top-0 z-50 bg-background border-b border-border">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2 font-bold text-xl text-foreground">
-        <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
-        <span class="font-extrabold tracking-wide text-foreground"
-          style="font-family: Arial, sans-serif; font-size: 22px;">DNK SKILLS</span>
+      <a href="../index.html#home" class="flex items-center gap-2 group shrink-0 relative z-10 transition-transform active:scale-95">
+        <div class="flex items-center justify-center">
+          <i data-lucide="flame" class="text-primary" style="width: 24px; height: 24px; stroke-width: 2.5;"></i>
+        </div>
+        <span class="font-black tracking-tight text-foreground text-[20px] md:text-[23px]" style="font-family: system-ui, -apple-system, sans-serif;">DNK SKILLS</span>
       </a>
       <div class="hidden md:flex items-center gap-8">
         <a href="../index.html" class="text-foreground hover:text-primary transition-colors font-semibold">Home</a>
         <a href="../training/index.html" class="text-foreground hover:text-primary transition-colors font-semibold">Training</a>
         <a href="index.html" class="text-primary hover:text-primary transition-colors font-semibold">Courses</a>
         <a href="../about/index.html" class="text-foreground hover:text-primary transition-colors font-semibold">About</a>
-        <a href="#enroll"
-          class="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity">
-          Start Learning &gt;
+        <a href="../index.html#courses" class="group relative bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-[15px] hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 ring-2 ring-primary/10 hover:ring-primary/40 ring-offset-2 ring-offset-white overflow-hidden z-10">
+          <span class="relative z-10 flex items-center gap-1.5">
+            Start Learning &gt;
+          </span>
+          <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
         </a>
       </div>
       <button id="mobile-menu-btn" class="md:hidden">
@@ -52,9 +55,11 @@
       <a href="../training/index.html" class="py-2 text-foreground font-semibold mobile-link">Training</a>
       <a href="index.html" class="py-2 text-primary font-semibold mobile-link">Courses</a>
       <a href="../about/index.html" class="py-2 text-foreground font-semibold mobile-link">About</a>
-      <a href="#enroll"
-        class="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold text-center mobile-link">
-        Start Learning &gt;
+      <a href="../index.html#courses" class="group relative mt-4 bg-[#29965a] text-white px-6 py-4 rounded-xl font-bold text-center shadow-lg shadow-primary/20 hover:-translate-y-1 transition-all duration-300 ring-2 ring-emerald-500/20 hover:ring-emerald-500/50 ring-offset-4 ring-offset-white overflow-hidden z-10">
+        <span class="relative z-10">
+          Start Learning &gt;
+        </span>
+        <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
       </a>
     </div>
   </nav>
@@ -720,10 +725,10 @@
       
       <!-- Brand & Description -->
       <div class="space-y-4">
-        <div class="flex items-center gap-2 font-bold text-2xl">
+        <a href="../index.html#home" class="flex items-center gap-2 font-bold text-2xl group transition-transform active:scale-95">
           <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
           <span class="font-extrabold tracking-wide text-white" style="font-family: Arial, sans-serif;">DNK SKILLS</span>
-        </div>
+        </a>
         <p class="text-[15px] text-muted-foreground leading-relaxed mt-2">
           Empowering the future through innovative education and technology solutions.
         </p>
