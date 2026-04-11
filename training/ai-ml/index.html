@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Master AI & Machine Learning with Practical Projects | DNK SKILLS</title>
+  <meta name="description" content="Enter the world of Artificial Intelligence. Learn Machine Learning, Deep Learning, and data analysis from industry experts. ISO Certified Training.">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../../js/script.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Social Media Previews (Open Graph) -->
+  <meta property="og:title" content="AI & Machine Learning Training | DNK SKILL">
+  <meta property="og:description" content="Master the future with Artificial Intelligence and Machine Learning. Practical training with real-world datasets.">
+  <meta property="og:image" content="https://www.dnkskills.com/images/image.png">
+  <meta property="og:url" content="https://www.dnkskills.com/training/ai-ml/index.html">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Artificial Intelligence & ML Mastery",
+    "description": "Master the future with AI and ML. Practical training with real-world datasets and advanced algorithms.",
+    "provider": {
+      "@type": "Organization",
+      "name": "DNK SKILLS",
+      "sameAs": "https://www.dnkskills.com/"
+    },
+    "url": "https://www.dnkskills.com/training/ai-ml/index.html",
+    "courseCode": "AIML101",
+    "offers": {
+      "@type": "Offer",
+      "price": "1499",
+      "priceCurrency": "INR"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.dnkskills.com/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Training",
+      "item": "https://www.dnkskills.com/training/"
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AI & ML",
+      "item": "https://www.dnkskills.com/training/ai-ml/"
+    }]
+  }
+  </script>
+</head>
+
+<body class="min-h-screen bg-background text-foreground overflow-x-hidden w-full">
+  <!-- Header -->
+  <header>
+    <nav class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm relative w-full">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between relative">
+      <!-- Logo (Left) -->
+      <a href="../../index.html#home" class="flex items-center gap-2 group shrink-0 relative z-10 transition-transform active:scale-95">
+        <div class="w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-all">
+          <i data-lucide="flame" class="text-primary" style="width: 22px; height: 22px; stroke-width: 2.5;"></i>
+        </div>
+        <span class="font-black tracking-tighter text-slate-900 text-[20px] md:text-[22px]" style="font-family: Arial, sans-serif;">DNK SKILLS</span>
+      </a>
+
+      <!-- Navigation Links (Mathematical Center) -->
+      <div class="hidden md:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
+        <a href="../../index.html"
+          class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">Home</a>
+        <a href="../../training/index.html"
+          class="text-primary hover:text-primary transition-colors font-bold text-[15px]">Training</a>
+        <a href="../../courses/index.html"
+          class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">Courses</a>
+        <a href="../../about/index.html"
+          class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">About</a>
+      </div>
+
+      <!-- CTA Button (Right) -->
+      <div class="hidden md:block shrink-0 relative z-10">
+        <a href="#enrollMenu" class="group relative bg-[#29965a] text-white px-6 py-2.5 rounded-lg font-bold text-[15px] hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 ring-2 ring-emerald-500/20 hover:ring-emerald-500/50 ring-offset-2 ring-offset-white overflow-hidden z-10" onclick="document.getElementById('enrollmentForm').scrollIntoView({behavior: 'smooth'})">
+          <span class="relative z-10 flex items-center gap-1.5">
+            Start Learning &gt;
+          </span>
+          <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-50 transition-colors relative z-10">
+        <i id="menu-icon" data-lucide="menu" class="w-6 h-6 text-slate-900"></i>
+        <i id="close-icon" data-lucide="x" class="w-6 h-6 text-slate-900 hidden"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-50 px-4 py-6 flex-col gap-4 shadow-xl">
+      <a href="../../index.html" class="text-lg font-bold text-slate-800 mobile-link">Home</a>
+      <a href="../../training/index.html" class="text-lg font-bold text-primary mobile-link">Training</a>
+      <a href="../../courses/index.html" class="text-lg font-bold text-slate-800 mobile-link">Courses</a>
+      <a href="../../about/index.html" class="text-lg font-bold text-slate-800 mobile-link">About</a>
+      <a href="#enrollMenu" class="group relative mt-4 bg-[#29965a] text-white px-6 py-4 rounded-xl font-bold text-center shadow-lg shadow-primary/20 hover:-translate-y-1 transition-all duration-300 ring-2 ring-emerald-500/20 hover:ring-emerald-500/50 ring-offset-4 ring-offset-white overflow-hidden z-10" onclick="document.getElementById('enrollmentForm').scrollIntoView({behavior: 'smooth'})">
+        <span class="relative z-10">
+          Start Learning &gt;
+        </span>
+        <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
+      </a>
+    </div>
+  </header>
+
+  <main class="w-full flex-grow bg-background pb-12">
+    <section class="bg-primary text-primary-foreground pt-12 md:pt-20 pb-20 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+      </div>
+      <div class="max-w-7xl mx-auto px-4 relative z-10" data-aos="fade-up">
+        <!-- Breadcrumbs -->
+        <nav class="flex items-center gap-2 text-sm font-medium mb-6 text-primary-foreground/80" aria-label="Breadcrumb">
+          <div class="flex items-center gap-2 overflow-x-auto whitespace-nowrap hide-scrollbar" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="../../index.html" href="../../index.html" class="hover:text-white transition-colors flex items-center gap-1">
+                <i data-lucide="home" class="w-4 h-4"></i> <span itemprop="name">Home</span>
+              </a>
+              <meta itemprop="position" content="1" />
+            </span>
+            <i data-lucide="chevron-right" class="w-4 h-4 opacity-50"></i>
+            <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="../index.html" href="../index.html" class="hover:text-white transition-colors">
+                <span itemprop="name">Training</span>
+              </a>
+              <meta itemprop="position" content="2" />
+            </span>
+            <i data-lucide="chevron-right" class="w-4 h-4 opacity-50"></i>
+            <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <span itemprop="name" class="text-white">AI / ML</span>
+              <meta itemprop="position" content="3" />
+            </span>
+          </div>
+        </nav>
+
+        <div
+          class="flex items-center gap-3 mb-4 text-xs md:text-sm font-semibold tracking-wider text-primary-foreground/80 uppercase">
+          <span class="bg-white/10 px-3 py-1 rounded-full flex items-center gap-1.5"><i data-lucide="video"
+              class="w-4 h-4 text-[#ffbd2e]"></i> Live Classes</span>
+          <span>•</span>
+          <span>AI / ML</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6"
+          style="font-family: Arial, sans-serif;">Artificial Intelligence & ML <br class="hidden md:block" /><span
+            class="text-secondary text-2xl md:text-4xl block mt-2 font-bold opacity-90">The Future is Here</span></h1>
+        <p class="text-base md:text-lg text-primary-foreground/90 max-w-2xl mb-8 leading-relaxed">Learn to build
+          intelligent systems with Python. Master Neural Networks, Computer Vision, and Predictive Analytics from
+          scratch.</p>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 -mt-8 relative z-20">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12">
+        <div class="lg:col-span-8 space-y-8 lg:space-y-12">
+          <div class="bg-card border border-border rounded-2xl shadow-sm p-6 md:p-10 space-y-10 lg:space-y-12">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 pb-8 border-b border-border">
+              <div class="bg-primary/5 rounded-xl p-4 border border-primary/10">
+                <i data-lucide="calendar" class="w-6 h-6 text-primary mb-2"></i>
+                <div class="text-xs md:text-sm text-muted-foreground font-medium mb-1">Duration</div>
+                <div class="font-bold text-foreground">8 Weeks</div>
+              </div>
+              <div class="bg-primary/5 rounded-xl p-4 border border-primary/10">
+                <i data-lucide="monitor-play" class="w-6 h-6 text-primary mb-2"></i>
+                <div class="text-xs md:text-sm text-muted-foreground font-medium mb-1">Format</div>
+                <div class="font-bold text-foreground">Live Online</div>
+              </div>
+              <div
+                class="col-span-2 sm:col-span-1 bg-primary/5 rounded-xl p-4 border border-primary/10 flex flex-row sm:flex-col items-center sm:items-start gap-4 sm:gap-0">
+                <i data-lucide="languages" class="w-6 h-6 text-primary mb-0 sm:mb-2 shrink-0"></i>
+                <div>
+                  <div class="text-xs md:text-sm text-muted-foreground font-medium mb-0 sm:mb-1">Language</div>
+                  <div class="font-bold text-foreground">Hindi / English</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold text-foreground mb-4">About This Course</h2>
+              <p class="text-muted-foreground leading-relaxed text-sm md:text-[15px]">AI is transforming industries.
+                This course bridges the gap between theory and practice, teaching you how to build real-world AI
+                applications. From classical machine learning to deep learning with TensorFlow/PyTorch, you will be
+                prepared for the AI-driven economy.</p>
+            </div>
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold text-foreground mb-4">What You Will Learn</h2>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> <span
+                    class="text-muted-foreground text-[15px]">Machine Learning Core Concepts</span></div>
+                <div class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> <span
+                    class="text-muted-foreground text-[15px]">Deep Learning & Neural Networks</span></div>
+                <div class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> <span
+                    class="text-muted-foreground text-[15px]">Computer Vision Basics (OpenCV)</span></div>
+                <div class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> <span
+                    class="text-muted-foreground text-[15px]">Natural Language Processing (NLP)</span></div>
+                <div class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> <span
+                    class="text-muted-foreground text-[15px]">Model Deployment & Optimization</span></div>
+                <div class="flex items-start gap-3"><i data-lucide="check-circle-2"
+                    class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> <span
+                    class="text-muted-foreground text-[15px]">Industry-specific AI case studies</span></div>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-xl md:text-2xl font-bold text-foreground mb-4">Course Syllabus</h2>
+              <div class="space-y-4">
+                <div
+                  class="border border-border rounded-xl p-5 hover:border-primary/50 transition-colors bg-background/50">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <h3 class="font-bold text-[17px]">Module 1: Linear & Logistic Models</h3>
+                    <span class="text-sm text-primary font-medium shrink-0">Week 1-2</span>
+                  </div>
+                  <p class="text-[15px] text-muted-foreground mt-2">Foundational ML algorithms and mathematical
+                    concepts.</p>
+                </div>
+                <div
+                  class="border border-border rounded-xl p-5 hover:border-primary/50 transition-colors bg-background/50">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <h3 class="font-bold text-[17px]">Module 2: Tree Models & Ensemble</h3>
+                    <span class="text-sm text-primary font-medium shrink-0">Week 3</span>
+                  </div>
+                  <p class="text-[15px] text-muted-foreground mt-2">Random Forest, XGBoost, and model evaluation
+                    metrics.</p>
+                </div>
+                <div
+                  class="border border-border rounded-xl p-5 hover:border-primary/50 transition-colors bg-background/50">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <h3 class="font-bold text-[17px]">Module 3: Neural Network Basics</h3>
+                    <span class="text-sm text-primary font-medium shrink-0">Week 4-5</span>
+                  </div>
+                  <p class="text-[15px] text-muted-foreground mt-2">Perceptrons, backpropagation, and basic deep
+                    learning.</p>
+                </div>
+                <div
+                  class="border border-border rounded-xl p-5 hover:border-primary/50 transition-colors bg-background/50">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <h3 class="font-bold text-[17px]">Module 4: CV and NLP Foundations</h3>
+                    <span class="text-sm text-primary font-medium shrink-0">Week 6-7</span>
+                  </div>
+                  <p class="text-[15px] text-muted-foreground mt-2">Image recognition and text processing with AI.</p>
+                </div>
+                <div
+                  class="border border-border rounded-xl p-5 hover:border-primary/50 transition-colors bg-background/50">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <h3 class="font-bold text-[17px]">Module 5: Project & Deployment</h3>
+                    <span class="text-sm text-primary font-medium shrink-0">Week 8</span>
+                  </div>
+                  <p class="text-[15px] text-muted-foreground mt-2">Building an AI bot or predictor and serving it live.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-6 sm:p-8 text-primary-foreground flex flex-col sm:flex-row items-center gap-6 md:gap-8 relative overflow-hidden shadow-lg">
+            <i data-lucide="award"
+              class="absolute -right-8 -bottom-8 w-48 h-48 opacity-10 text-white transform -rotate-12"></i>
+            <div class="flex-1 relative z-10 text-center sm:text-left">
+              <h2 class="text-xl md:text-2xl font-bold mb-2">Get Certified</h2>
+              <p class="text-primary-foreground/90 leading-relaxed text-[15px]">Upon successful completion of the course
+                and test, you will receive an industry-recognized certificate from DNK SKILLS to boost your resume.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-4 relative h-full">
+          <div class="sticky top-24 z-30 flex flex-col gap-6 mt-8 lg:mt-0">
+            <div
+              class="bg-white border border-[#e2e8f0] rounded-[24px] shadow-sm p-8 pb-5 max-w-md mx-auto relative z-10">
+
+
+              <div class="mb-8">
+                <h3 class="text-[20px] font-bold text-[#1e293b]">Payment Details</h3>
+                <p class="text-[14px] text-[#64748b] mt-1 leading-snug">
+                  (18% GST already included which is paid to the Government)
+                </p>
+                <div class="flex items-center gap-3 mt-3 flex-wrap">
+                  <span class="text-[32px] font-extrabold text-[#0f172a]">₹ 1499</span>
+                  <span class="text-[18px] text-[#94a3b8] line-through font-medium">₹ 6,999</span>
+                  <span
+                    class="bg-emerald-50 text-emerald-700 text-[11px] font-bold px-2 py-0.5 rounded-[4px] border border-emerald-100 uppercase tracking-tight">78%
+                    OFF</span>
+                </div>
+              </div>
+
+              <form id="enrollmentForm" class="space-y-5">
+                <div class="space-y-2">
+                  <label class="block text-[12px] font-bold text-[#334155] uppercase tracking-wide">Full Name</label>
+                  <input type="text" placeholder="Enter your full name"
+                    class="w-full h-[56px] px-5 rounded-[12px] border border-[#cbd5e1] focus:border-[#2d6a4f] focus:ring-1 focus:ring-[#2d6a4f] outline-none transition-all placeholder:text-[#94a3b8]"
+                    required>
+                </div>
+
+                <div class="space-y-2">
+                  <label class="block text-[12px] font-bold text-[#334155] uppercase tracking-wide">Phone Number</label>
+                  <div class="flex h-[56px]">
+                    <div
+                      class="flex items-center justify-center px-4 bg-[#f8fafc] border border-[#cbd5e1] border-r-0 rounded-l-[12px] text-[#475569] font-bold text-[15px]">
+                      +91
+                    </div>
+                    <input type="tel" placeholder="10-digit number"
+                      class="flex-1 px-5 rounded-r-[12px] border border-[#cbd5e1] focus:border-[#2d6a4f] focus:ring-1 focus:ring-[#2d6a4f] outline-none transition-all placeholder:text-[#94a3b8]"
+                      required>
+                  </div>
+                </div>
+
+                <div class="space-y-2">
+                  <label class="block text-[12px] font-bold text-[#334155] uppercase tracking-wide">Email
+                    Address</label>
+                  <input type="email" placeholder="you@example.com"
+                    class="w-full h-[56px] px-5 rounded-[12px] border border-[#cbd5e1] focus:border-[#2d6a4f] focus:ring-1 focus:ring-[#2d6a4f] outline-none transition-all placeholder:text-[#94a3b8]"
+                    required>
+                </div>
+
+                <div class="space-y-2">
+                  <label class="block text-[12px] font-bold text-[#334155] uppercase tracking-wide">College / University
+                    Name</label>
+                  <input type="text" placeholder="e.g. LPU, Jalandhar"
+                    class="w-full h-[56px] px-5 rounded-[12px] border border-[#cbd5e1] focus:border-[#347754] focus:ring-1 focus:ring-[#347754] outline-none transition-all placeholder:text-[#94a3b8]"
+                    required>
+                </div>
+
+                <button type="submit"
+                  class="w-full h-[60px] bg-[#2d6a4f] hover:bg-[#23533e] text-white font-bold text-[18px] rounded-[14px] flex items-center justify-center gap-3 transition-all mt-4 active:scale-[0.98] shadow-[0_10px_20px_-5px_rgba(45,106,79,0.3)]">
+                  Pay ₹ 1499 <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </button>
+              </form>
+
+              <div
+                class="mt-4 flex items-center justify-center gap-2 text-[#94a3b8] text-[13px] font-medium border-t border-slate-50 pt-4">
+                <i data-lucide="lock" class="w-4 h-4"></i>
+                100% Safe & Secure Payment Space
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-foreground text-primary-foreground py-12 border-t border-border">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+      <div class="space-y-4">
+        <a href="../../index.html#home" class="flex items-center gap-2 font-bold text-2xl group transition-transform active:scale-95">
+          <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
+          <span class="font-extrabold tracking-wide text-white">DNK SKILLS</span>
+        </a>
+        <p class="text-[15px] text-muted-foreground leading-relaxed mt-2">Empowering the future through innovative
+          education.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg text-white mb-5">Quick Links</h4>
+        <ul class="space-y-3 text-[15px] text-muted-foreground">
+          <li><a href="../../index.html" class="hover:text-primary transition-colors">Home</a></li>
+          <li><a href="../../training/index.html" class="hover:text-primary transition-colors">Training</a></li>
+          <li><a href="../../courses/index.html" class="hover:text-primary transition-colors">Courses</a></li>
+          <li><a href="../../about/index.html" class="hover:text-primary transition-colors">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, offset: 50, duration: 800 });
+    document.getElementById('enrollmentForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for your interest!');
+      this.reset();
+    });
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>

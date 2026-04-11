@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>DNK SKILL - Start Learning Now</title>
+  
+  <link rel="canonical" href="https://www.dnkskills.com/training" />
+
+  <!-- Social Media Previews (Open Graph) -->
+  <meta property="og:title" content="Intensive Summer Training Programs | DNK SKILL">
+  <meta property="og:description" content="Boost your career with our certified summer training programs. Web Dev, App Dev, Data Science, and more.">
+  <meta property="og:image" content="https://www.dnkskills.com/images/image.png">
+  <meta property="og:url" content="https://www.dnkskills.com/training/index.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- External JS (Tailwind Config + App Logic) -->
+  <script src="../js/script.js"></script>
+
+  <!-- AOS Animations CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="min-h-screen bg-background text-foreground overflow-x-hidden w-full">
+
+  <!-- Header -->
+  <header>
+    <nav class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm relative">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between relative">
+      <!-- Logo (Left) -->
+      <a href="../index.html#home" class="flex items-center gap-2 group shrink-0 relative z-10 transition-transform active:scale-95">
+        <div class="w-9 h-9 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-all">
+          <i data-lucide="flame" class="text-primary" style="width: 22px; height: 22px; stroke-width: 2.5;"></i>
+        </div>
+        <span class="font-black tracking-tighter text-slate-900 text-[20px] md:text-[22px]" style="font-family: Arial, sans-serif;">DNK SKILLS</span>
+      </a>
+
+      <!-- Navigation Links (Mathematical Center) -->
+      <div class="hidden md:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
+        <a href="../index.html" class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">Home</a>
+        <a href="index.html" class="text-primary hover:text-primary transition-colors font-bold text-[15px]">Training</a>
+        <a href="../courses/index.html" class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">Courses</a>
+        <a href="../about/index.html" class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">About</a>
+      </div>
+
+      <!-- CTA Button (Right) -->
+      <div class="hidden md:block shrink-0 relative z-10">
+        <a href="../index.html#courses" class="group relative bg-[#29965a] text-white px-6 py-2.5 rounded-lg font-bold text-[15px] hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 ring-2 ring-emerald-500/20 hover:ring-emerald-500/50 ring-offset-2 ring-offset-white overflow-hidden z-10">
+          <span class="relative z-10 flex items-center gap-1.5">
+            Start Learning &gt;
+          </span>
+          <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-50 transition-colors relative z-10">
+        <i id="menu-icon" data-lucide="menu" class="w-6 h-6 text-slate-900"></i>
+        <i id="close-icon" data-lucide="x" class="w-6 h-6 text-slate-900 hidden"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-50 px-4 py-6 flex-col gap-4 shadow-xl">
+      <a href="../index.html" class="text-lg font-bold text-slate-800 mobile-link">Home</a>
+      <a href="index.html" class="text-lg font-bold text-primary mobile-link">Training</a>
+      <a href="../courses/index.html" class="text-lg font-bold text-slate-800 mobile-link">Courses</a>
+      <a href="../about/index.html" class="text-lg font-bold text-slate-800 mobile-link">About</a>
+      <a href="../index.html#courses" class="group relative mt-4 bg-[#29965a] text-white px-6 py-4 rounded-xl font-bold text-center shadow-lg shadow-primary/20 hover:-translate-y-1 transition-all duration-300 ring-2 ring-emerald-500/20 hover:ring-emerald-500/50 ring-offset-4 ring-offset-white overflow-hidden z-10">
+        <span class="relative z-10">
+          Start Learning &gt;
+        </span>
+        <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
+      </a>
+    </div>
+  </header>
+
+
+  <main class="w-full flex-grow">
+    <!-- Breadcrumbs -->
+    <nav class="bg-slate-50 border-b border-slate-100 py-3" aria-label="Breadcrumb">
+      <div class="max-w-7xl mx-auto px-4 flex items-center gap-2 text-sm font-medium overflow-x-auto whitespace-nowrap hide-scrollbar" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="../index.html" href="../index.html" class="text-slate-500 hover:text-primary transition-colors flex items-center gap-1">
+            <i data-lucide="home" class="w-4 h-4"></i> <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </span>
+        <i data-lucide="chevron-right" class="w-4 h-4 text-slate-300"></i>
+        <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" class="text-slate-900">Training</span>
+          <meta itemprop="position" content="2" />
+        </span>
+      </div>
+    </nav>
+    <section
+      class="bg-primary py-16 md:py-24 w-full text-primary-foreground min-h-[calc(100vh-80px)] flex items-center relative overflow-hidden">
+      <!-- Decorative background elements similar to the gradient vibe -->
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary to-primary/80 opacity-50 pointer-events-none">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10" data-aos="fade-up"
+        data-aos-duration="1000">
+        <!-- Text Content -->
+        <div class="space-y-6">
+          <div
+            class="inline-flex items-center gap-2 bg-white text-primary px-4 py-2 rounded-full text-sm font-bold shadow-sm">
+            🚀 8 Week Intensive
+          </div>
+          <h1 class="text-4xl md:text-[54px] font-extrabold leading-[1.15] tracking-tight text-white"
+            style="font-family: Arial, sans-serif;">
+            Summer Training Program
+          </h1>
+          <p class="text-[17px] md:text-[19px] text-white leading-relaxed max-w-lg font-medium opacity-100">
+            Industry-relevant courses designed to make you job-ready. Learn from experts with real-world projects.
+          </p>
+          <ul class="space-y-4 pt-4">
+            <li class="flex items-center gap-4 text-white hover:translate-x-1 transition-transform cursor-pointer">
+              <div class="shrink-0 flex items-center justify-center">
+                <i data-lucide="check" class="w-5 h-5 text-white" stroke-width="3"></i>
+              </div>
+              <span class="text-base md:text-[17px] font-semibold tracking-wide">DSA with C++</span>
+            </li>
+            <li class="flex items-center gap-4 text-white hover:translate-x-1 transition-transform cursor-pointer">
+              <div class="shrink-0 flex items-center justify-center">
+                <i data-lucide="check" class="w-5 h-5 text-white" stroke-width="3"></i>
+              </div>
+              <span class="text-base md:text-[17px] font-semibold tracking-wide">Web Development</span>
+            </li>
+            <li class="flex items-center gap-4 text-white hover:translate-x-1 transition-transform cursor-pointer">
+              <div class="shrink-0 flex items-center justify-center">
+                <i data-lucide="check" class="w-5 h-5 text-white" stroke-width="3"></i>
+              </div>
+              <span class="text-base md:text-[17px] font-semibold tracking-wide">App Development</span>
+            </li>
+            <li class="flex items-center gap-4 text-white hover:translate-x-1 transition-transform cursor-pointer">
+              <div class="shrink-0 flex items-center justify-center">
+                <i data-lucide="check" class="w-5 h-5 text-white" stroke-width="3"></i>
+              </div>
+              <span class="text-base md:text-[17px] font-semibold tracking-wide">Data Science</span>
+            </li>
+            <li class="flex items-center gap-4 text-white hover:translate-x-1 transition-transform cursor-pointer">
+              <div class="shrink-0 flex items-center justify-center">
+                <i data-lucide="check" class="w-5 h-5 text-white" stroke-width="3"></i>
+              </div>
+              <span class="text-base md:text-[17px] font-semibold tracking-wide">DSA with Java</span>
+            </li>
+            <li class="flex items-center gap-4 text-white hover:translate-x-1 transition-transform cursor-pointer">
+              <div class="shrink-0 flex items-center justify-center">
+                <i data-lucide="check" class="w-5 h-5 text-white" stroke-width="3"></i>
+              </div>
+              <span class="text-base md:text-[17px] font-semibold tracking-wide">AI / ML</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Graphic Section -->
+        <div class="w-full flex justify-center items-center pt-8 md:pt-0">
+          <img src="../images/image.png" alt="Summer Training Preview"
+            class="w-full h-auto max-w-[600px] rounded-xl shadow-2xl object-cover hover:scale-[1.02] transition-transform duration-500" />
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Industry Programs Section -->
+    <section id="courses" class="py-16 bg-background">
+      <div class="max-w-7xl mx-auto px-4">
+
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-foreground">
+          <span class="text-primary">Industrial</span> Training Programs
+        </h2>
+        <p class="mt-3 text-center text-muted-foreground max-w-xl mx-auto">
+          Industry-focused training programs designed to make you job-ready and help you crack placements with
+          real-world
+          skills.
+        </p>
+
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
+
+          <!-- DSA with C++ Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="code-2" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">DSA with C++</h3>
+            </div>
+            <p class="text-[15px] font-medium text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Master Data Structures and Algorithms from scratch using C++. Build problem-solving skills for top tech
+              companies.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Beginner to Advanced
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                100+ Problems
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Live Classes
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Competitive Programming
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Interview Prep
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            
+            <div class="mt-6 flex flex-col justify-end pt-1">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="dsa-cpp/index.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="monitor" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Web Development</h3>
+            </div>
+            <p class="text-[15px] font-medium text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Master full-stack development with HTML, CSS, JavaScript, React, Node.js, and databases. Build responsive
+              websites and web applications.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                HTML, CSS, JavaScript
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Git and GitHub
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Nodejs, Expressjs, MongoDB
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Reactjs
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Deployment
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            
+            <div class="mt-6 flex flex-col justify-end pt-1">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-3">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="web-development/index.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- App Development Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="smartphone" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">App Development</h3>
+            </div>
+            <p class="text-[15px] font-medium text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Build cross-platform mobile apps with Flutter and React Native. Learn UI/UX principles, APIs, and
+              publishing
+              to app stores.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                JavaScript, TypeScript
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Git and GitHub
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Expo, React Native CLI
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                React Navigation, Redux
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Build, Test, Deploy
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            
+            <div class="mt-4 flex flex-col justify-end">
+
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-3">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="app-development/index.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Science Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="bar-chart" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Data Science</h3>
+            </div>
+            <p class="text-[15px] font-medium text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Learn to analyze data, build predictive models, and extract actionable insights. Master Python, Pandas,
+              and
+              SQL.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Python & Libraries
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Data Visualization
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                SQL for Data Science
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Statistical Analysis
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Capstone Project
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            
+            <div class="mt-4 flex flex-col justify-end">
+
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-3">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="data-science/index.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- DSA with Java Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="coffee" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">DSA with Java</h3>
+            </div>
+            <p class="text-[15px] font-medium text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Master Data Structures and Algorithms using Java. Essential for cracking interviews at top product-based
+              companies.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Core Java Concepts
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Collections Framework
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Graph & Tree Algorithms
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Dynamic Programming
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Mock Interviews
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            
+            <div class="mt-4 flex flex-col justify-end">
+
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-3">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="dsa-java/index.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI / ML Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="brain" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">AI / ML</h3>
+            </div>
+            <p class="text-sm text-foreground mb-6 leading-relaxed opacity-90">
+              Dive into Artificial Intelligence and Machine Learning. Build neural networks and real-world AI
+              applications.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Neural Networks & Deep Learning
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                TensorFlow & PyTorch
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Computer Vision Basics
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Natural Language Processing
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Real-World Case Studies
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            <div class="mt-6 flex flex-col justify-end pt-1">
+
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="ai-ml/index.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Hub Section -->
+    <section class="py-16 bg-[#f0f9f6]">
+      <div class="max-w-7xl mx-auto px-4">
+        
+        <!-- Header -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-10 gap-4">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-bold text-[#1f2937]">
+              Explore Our <span class="text-primary">Learning Hub</span>
+            </h2>
+            <div class="h-1 w-16 bg-[#c3e3d6] mt-2 rounded-full"></div>
+          </div>
+          <div class="flex items-center gap-3">
+             <button class="w-[34px] h-[34px] rounded-full bg-[#2d8e62] flex items-center justify-center text-white hover:bg-[#23754f] transition-colors shadow-sm">
+                <i data-lucide="chevron-left" class="w-5 h-5"></i>
+             </button>
+             <button class="w-[34px] h-[34px] rounded-full bg-[#2d8e62] flex items-center justify-center text-white hover:bg-[#23754f] transition-colors shadow-sm">
+                <i data-lucide="chevron-right" class="w-5 h-5"></i>
+             </button>
+          </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="flex overflow-x-auto gap-5 md:gap-7 pb-6 hide-scrollbar snap-x snap-mandatory">
+          
+          <!-- Card 1 -->
+          <div class="min-w-[220px] md:min-w-[260px] bg-white p-3.5 rounded-[22px] shadow-sm shrink-0 snap-center flex flex-col hover:-translate-y-1 hover:shadow-md transition-all">
+             <div class="bg-[#f28e3b] w-full h-[120px] rounded-[16px] flex items-center justify-center mb-5">
+                <i data-lucide="zap" class="text-white w-9 h-9" stroke-width="2.5"></i>
+             </div>
+             <h4 class="font-bold text-[14.5px] text-center text-[#1f2937] pb-3 tracking-wide">Daily Practice Question</h4>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="min-w-[220px] md:min-w-[260px] bg-white p-3.5 rounded-[22px] shadow-sm shrink-0 snap-center flex flex-col hover:-translate-y-1 hover:shadow-md transition-all">
+             <div class="bg-[#1bb876] w-full h-[120px] rounded-[16px] flex items-center justify-center mb-5">
+                <i data-lucide="clipboard-check" class="text-white w-9 h-9" stroke-width="2.5"></i>
+             </div>
+             <h4 class="font-bold text-[14.5px] text-center text-[#1f2937] pb-3 tracking-wide">Weekly Mock Test</h4>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="min-w-[220px] md:min-w-[260px] bg-white p-3.5 rounded-[22px] shadow-sm shrink-0 snap-center flex flex-col hover:-translate-y-1 hover:shadow-md transition-all">
+             <div class="bg-[#8b5cf6] w-full h-[120px] rounded-[16px] flex items-center justify-center mb-5">
+                <i data-lucide="mic" class="text-white w-9 h-9" stroke-width="2.5"></i>
+             </div>
+             <h4 class="font-bold text-[14.5px] text-center text-[#1f2937] pb-3 tracking-wide">Soft Skill Preparation</h4>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="min-w-[220px] md:min-w-[260px] bg-white p-3.5 rounded-[22px] shadow-sm shrink-0 snap-center flex flex-col hover:-translate-y-1 hover:shadow-md transition-all">
+             <div class="bg-[#3b82f6] w-full h-[120px] rounded-[16px] flex items-center justify-center mb-5">
+                <i data-lucide="file-badge" class="text-white w-9 h-9" stroke-width="2.5"></i>
+             </div>
+             <h4 class="font-bold text-[14.5px] text-center text-[#1f2937] pb-3 tracking-wide">Resume Guide</h4>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="min-w-[220px] md:min-w-[260px] bg-white p-3.5 rounded-[22px] shadow-sm shrink-0 snap-center flex flex-col hover:-translate-y-1 hover:shadow-md transition-all">
+             <div class="bg-[#22d3ee] w-full h-[120px] rounded-[16px] flex items-center justify-center mb-5">
+                <i data-lucide="database" class="text-white w-9 h-9" stroke-width="2.5"></i>
+             </div>
+             <h4 class="font-bold text-[14.5px] text-center text-[#1f2937] pb-3 tracking-wide">DBMS & SQL Bank</h4>
+          </div>
+
+        </div>
+
+        <!-- CTA Button -->
+        <div class="mt-16 text-center w-full flex flex-col items-center justify-center relative"
+          data-aos="fade-up" data-aos-delay="300">
+          <!-- Glowing Pulse Effect Behind Button -->
+          <div class="absolute top-4 w-48 h-12 bg-primary/40 rounded-full blur-2xl animate-[pulse_2s_infinite]"></div>
+
+          <a href="https://learn.dnkskill.in" target="_blank"
+            class="group relative inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold text-[17px] sm:text-lg shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 overflow-hidden ring-2 ring-transparent hover:ring-primary/50 ring-offset-4 ring-offset-background max-w-sm w-fit mx-auto z-10">
+            <span class="relative z-10 flex items-center gap-2">
+              Explore Platform For Free <i data-lucide="external-link"
+                class="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+            </span>
+            <div
+              class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0">
+            </div>
+          </a>
+          <p
+            class="mt-4 text-sm text-muted-foreground font-medium flex items-center justify-center gap-1.5 opacity-80 z-10">
+            <i data-lucide="sparkles" class="w-4 h-4 text-[#ffbd2e]"></i> Free 1-year access for all enrolled students
+          </p>
+        </div>
+
+      </div>
+    </section>
+ 
+    <style>
+      .hide-scrollbar::-webkit-scrollbar { display: none; }
+      .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+ 
+ 
+    <!-- Global Floating Action Buttons -->
+    <a href="https://wa.me/919876543210" target="_blank"
+      class="fixed bottom-6 right-6 bg-[#25D366] text-white p-3.5 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.063 3.963L0 16l4.223-1.108a7.922 7.922 0 0 0 3.767.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.908 7.908 0 0 0 13.6 2.326zM7.994 14.521a6.602 6.602 0 0 1-3.376-.92l-.242-.144-2.508.658.67-2.443-.158-.252a6.561 6.561 0 0 1-1.002-3.535c.003-3.619 2.95-6.566 6.57-6.57a6.578 6.578 0 0 1 4.646 1.92 6.575 6.575 0 0 1 1.921 4.646c-.004 3.619-2.95 6.566-6.57 6.57zm3.606-4.92c-.198-.099-1.17-.578-1.352-.644-.183-.066-.316-.099-.449.099-.133.198-.512.644-.627.777-.116.132-.231.149-.43.05-.198-.099-.835-.308-1.591-.98-.585-.52-1.026-1.163-1.145-1.36-.118-.198-.013-.305.086-.404.09-.09.198-.231.297-.347.1-.115.133-.198.198-.33.065-.133.033-.248-.016-.347-.05-.099-.45-1.084-.616-1.484-.161-.39-.325-.337-.449-.343-.116-.006-.248-.01-.38-.01-.133 0-.348.05-.53.248-.182.198-.695.677-.695 1.65 0 .972.712 1.91 8.1 2.044 3.473 1.977 3.518 1.977 4.183 2 4.619 2 5.053 1.554 5.185.748 5.438.2 5.305v-.804c-.033-.066-.116-.1-.316-.2z" />
+      </svg>
+    </a>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-foreground text-primary-foreground py-12 border-t border-border">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+
+      <!-- Brand & Description -->
+      <div class="space-y-4">
+        <a href="../index.html#home" class="flex items-center gap-2 font-bold text-2xl group transition-transform active:scale-95">
+          <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
+          <span class="font-extrabold tracking-wide text-white" style="font-family: Arial, sans-serif;">DNK
+            SKILLS</span>
+        </a>
+        <p class="text-[15px] text-muted-foreground leading-relaxed mt-2">
+          Empowering the future through innovative education and technology solutions.
+        </p>
+      </div>
+
+      <!-- Training Programs -->
+      <div>
+        <h4 class="font-bold text-lg text-white mb-5">Training Programs</h4>
+        <ul class="space-y-3 text-[15px] text-muted-foreground">
+          <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> Web Development</a></li>
+          <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> App Development</a></li>
+          <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> Data Science</a></li>
+          <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> DSA with C++</a></li>
+          <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> DSA with Java</a></li>
+          <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> AI / ML</a></li>
+        </ul>
+      </div>
+
+      <!-- Courses -->
+      <div>
+        <h4 class="font-bold text-lg text-white mb-5">Courses</h4>
+        <ul class="space-y-3 text-[15px] text-muted-foreground">
+          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> C Programming</a></li>
+          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> C++ Programming</a></li>
+          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> Python Programming</a></li>
+          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> Java Programming</a></li>
+          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> JavaScript</a></li>
+          <li class="pt-2"><a href="../courses/index.html"
+              class="text-primary hover:text-primary-foreground transition-colors flex items-center gap-2 font-semibold">View
+              More <i data-lucide="arrow-right" class="w-4 h-4"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div>
+        <h4 class="font-bold text-lg text-white mb-5">Contact Us</h4>
+        <ul class="space-y-4 text-[15px] text-muted-foreground">
+          <li class="flex items-start gap-3">
+            <i data-lucide="map-pin" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+            <span>LPU, Jalandhar-Delhi, G.T. Road,<br>Phagwara, Punjab (INDIA)</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i data-lucide="mail" class="w-5 h-5 text-primary shrink-0"></i>
+            <a href="mailto:support@dnkskill.com"
+              class="hover:text-primary transition-colors opacity-90">support@dnkskill.com</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <i data-lucide="phone" class="w-5 h-5 text-primary shrink-0"></i>
+            <a href="tel:8002318046" class="hover:text-primary transition-colors opacity-90">8002318046</a>
+          </li>
+        </ul>
+      </div>
+
+
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-primary-foreground/10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+        <div class="text-center md:text-left">
+          &copy; 2026 DNK SKILLS. All rights reserved.
+        </div>
+        <div class="font-bold text-center tracking-wider text-primary-foreground/80">
+          SIYADNK SOFTWARE PRIVATE LIMITED
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Script Initialization -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+

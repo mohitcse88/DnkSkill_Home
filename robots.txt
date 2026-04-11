@@ -1,4 +1,19 @@
+# https://www.robotstxt.org/robotstxt.html
+
 User-agent: *
+
+# Allow all content to be crawled
 Allow: /
 
+# Explicitly allow assets for better page rendering and mobile-friendliness assessment
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow system and hidden folders
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /private/
+
+# Sitemap link to help search engines find all pages
 Sitemap: https://www.dnkskills.com/sitemap.xml
