@@ -10,8 +10,9 @@
 
   <!-- Social Media Previews (Open Graph) -->
   <meta property="og:title" content="About Us | DNK SKILL">
-  <meta property="og:description" content="Discover our journey, mission, and vision. DNK SKILLS is dedicated to empowering the next generation of tech leaders.">
-  <meta property="og:image" content="https://www.dnkskills.com/images/image.png">
+  <meta property="og:description"
+    content="Discover our journey, mission, and vision. DNK SKILLS is dedicated to empowering the next generation of tech leaders.">
+  <meta property="og:image" content="https://www.dnkskills.com/images/about.png">
   <meta property="og:url" content="https://www.dnkskills.com/about/index.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
@@ -41,51 +42,64 @@
   <!-- Header -->
   <header>
     <nav class="sticky top-0 z-50 bg-background border-b border-border">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="../index.html#home" class="flex items-center gap-2 group shrink-0 relative z-10 transition-transform active:scale-95">
-        <div class="flex items-center justify-center">
-          <i data-lucide="flame" class="text-primary" style="width: 24px; height: 24px; stroke-width: 2.5;"></i>
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="../index.html#home"
+          class="flex items-center gap-2 group shrink-0 relative z-10 transition-transform active:scale-95">
+          <div class="flex items-center justify-center">
+            <i data-lucide="flame" class="text-primary" style="width: 24px; height: 24px; stroke-width: 2.5;"></i>
+          </div>
+          <span class="font-black tracking-tight text-foreground text-[20px] md:text-[23px]"
+            style="font-family: system-ui, -apple-system, sans-serif;">DNK SKILLS</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="../index.html" class="text-foreground hover:text-primary transition-colors font-semibold">Home</a>
+          <a href="../training/index.html"
+            class="text-foreground hover:text-primary transition-colors font-semibold">Training</a>
+          <a href="../courses/index.html"
+            class="text-foreground hover:text-primary transition-colors font-semibold">Courses</a>
+          <a href="index.html" class="text-primary hover:text-primary transition-colors font-semibold">About</a>
+          <a href="../index.html#courses"
+            class="group relative bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-[15px] hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 ring-2 ring-primary/10 hover:ring-primary/40 ring-offset-2 ring-offset-white overflow-hidden z-10">
+            <span class="relative z-10 flex items-center gap-1.5">
+              Start Learning &gt;
+            </span>
+            <div
+              class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0">
+            </div>
+          </a>
         </div>
-        <span class="font-black tracking-tight text-foreground text-[20px] md:text-[23px]" style="font-family: system-ui, -apple-system, sans-serif;">DNK SKILLS</span>
-      </a>
-      <div class="hidden md:flex items-center gap-8">
-        <a href="../index.html" class="text-foreground hover:text-primary transition-colors font-semibold">Home</a>
-        <a href="../training/index.html" class="text-foreground hover:text-primary transition-colors font-semibold">Training</a>
-        <a href="../courses/index.html" class="text-foreground hover:text-primary transition-colors font-semibold">Courses</a>
-        <a href="index.html" class="text-primary hover:text-primary transition-colors font-semibold">About</a>
-        <a href="../index.html#courses" class="group relative bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-[15px] hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 ring-2 ring-primary/10 hover:ring-primary/40 ring-offset-2 ring-offset-white overflow-hidden z-10">
-          <span class="relative z-10 flex items-center gap-1.5">
+        <button id="mobile-menu-btn" class="md:hidden">
+          <i id="menu-icon" data-lucide="menu" style="width: 24px; height: 24px;"></i>
+          <i id="close-icon" data-lucide="x" style="width: 24px; height: 24px;" class="hidden"></i>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden border-t border-border px-4 pb-4 flex-col gap-3">
+        <a href="../index.html" class="py-2 text-foreground font-semibold mobile-link">Home</a>
+        <a href="../training/index.html" class="py-2 text-foreground font-semibold mobile-link">Training</a>
+        <a href="../courses/index.html" class="py-2 text-foreground font-semibold mobile-link">Courses</a>
+        <a href="index.html" class="py-2 text-primary font-semibold mobile-link">About</a>
+        <a href="../index.html#courses"
+          class="group relative mt-4 bg-[#29965a] text-white px-6 py-4 rounded-xl font-bold text-center shadow-lg shadow-primary/20 hover:-translate-y-1 transition-all duration-300 ring-2 ring-emerald-500/20 hover:ring-emerald-500/50 ring-offset-4 ring-offset-white overflow-hidden z-10">
+          <span class="relative z-10">
             Start Learning &gt;
           </span>
-          <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
+          <div
+            class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0">
+          </div>
         </a>
       </div>
-      <button id="mobile-menu-btn" class="md:hidden">
-        <i id="menu-icon" data-lucide="menu" style="width: 24px; height: 24px;"></i>
-        <i id="close-icon" data-lucide="x" style="width: 24px; height: 24px;" class="hidden"></i>
-      </button>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden border-t border-border px-4 pb-4 flex-col gap-3">
-      <a href="../index.html" class="py-2 text-foreground font-semibold mobile-link">Home</a>
-      <a href="../training/index.html" class="py-2 text-foreground font-semibold mobile-link">Training</a>
-      <a href="../courses/index.html" class="py-2 text-foreground font-semibold mobile-link">Courses</a>
-      <a href="index.html" class="py-2 text-primary font-semibold mobile-link">About</a>
-      <a href="../index.html#courses" class="group relative mt-4 bg-[#29965a] text-white px-6 py-4 rounded-xl font-bold text-center shadow-lg shadow-primary/20 hover:-translate-y-1 transition-all duration-300 ring-2 ring-emerald-500/20 hover:ring-emerald-500/50 ring-offset-4 ring-offset-white overflow-hidden z-10">
-        <span class="relative z-10">
-          Start Learning &gt;
-        </span>
-        <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
-      </a>
-    </div>
   </header>
 
 
   <main class="py-16 bg-background">
     <!-- Breadcrumbs -->
     <nav class="bg-slate-50 border-b border-slate-100 py-3 -mt-16 mb-16" aria-label="Breadcrumb">
-      <div class="max-w-7xl mx-auto px-4 flex items-center gap-2 text-sm font-medium overflow-x-auto whitespace-nowrap hide-scrollbar" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <div
+        class="max-w-7xl mx-auto px-4 flex items-center gap-2 text-sm font-medium overflow-x-auto whitespace-nowrap hide-scrollbar"
+        itemscope itemtype="https://schema.org/BreadcrumbList">
         <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="../index.html" href="../index.html" class="text-slate-500 hover:text-primary transition-colors flex items-center gap-1">
+          <a itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="../index.html" href="../index.html"
+            class="text-slate-500 hover:text-primary transition-colors flex items-center gap-1">
             <i data-lucide="home" class="w-4 h-4"></i> <span itemprop="name">Home</span>
           </a>
           <meta itemprop="position" content="1" />
@@ -105,10 +119,18 @@
             Our <span class="text-primary">Story</span>
           </h2>
           <p class="text-muted-foreground leading-relaxed text-[17px]">
-            <strong class="text-foreground tracking-wide font-semibold text-[15px]">DNK SKILLS</strong> was born from a bold vision - to redefine how people learn, interact, and grow through the power of technology and creativity. Founded under the umbrella of <strong class="text-primary font-semibold">SIYADNK SOFTWARE PRIVATE LIMITED</strong>, DNK SKILLS began as a passion project by a tech enthusiast with a mission: to empower individuals and businesses with digital tools and knowledge that truly make a difference.
+            <strong class="text-foreground tracking-wide font-semibold text-[15px]">DNK SKILLS</strong> was born from a
+            bold vision - to redefine how people learn, interact, and grow through the power of technology and
+            creativity. Founded under the umbrella of <strong class="text-primary font-semibold">SIYADNK SOFTWARE
+              PRIVATE LIMITED</strong>, DNK SKILLS began as a passion project by a tech enthusiast with a mission: to
+            empower individuals and businesses with digital tools and knowledge that truly make a difference.
           </p>
           <p class="text-muted-foreground leading-relaxed text-[17px]">
-            The journey started in a small room with big dreams. Our founder, a developer and educator at heart, recognized the gap between traditional education and modern digital skills. Determined to bridge that gap, DNK SKILLS began by creating high-quality content around programming, technology, and software development. We weren't just another blog or media outlet. From day one, DNK SKILLS stood out by focusing on clarity, real-world application, and creativity - all backed by a community-first approach.
+            The journey started in a small room with big dreams. Our founder, a developer and educator at heart,
+            recognized the gap between traditional education and modern digital skills. Determined to bridge that gap,
+            DNK SKILLS began by creating high-quality content around programming, technology, and software development.
+            We weren't just another blog or media outlet. From day one, DNK SKILLS stood out by focusing on clarity,
+            real-world application, and creativity - all backed by a community-first approach.
           </p>
           <div class="flex flex-wrap gap-4 pt-4">
             <div class="bg-primary/5 border border-primary/20 rounded-xl p-4 flex-1 min-w-[140px]">
@@ -121,8 +143,12 @@
             </div>
           </div>
         </div>
-        <div class="w-full rounded-2xl overflow-hidden shadow-2xl relative" data-aos="zoom-in" data-aos-delay="100">
-          <img src="../images/image.png" alt="DNK Skills Classroom" class="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80'">
+        <div class="w-full max-w-[850px] mx-auto rounded-2xl overflow-hidden shadow-2xl relative" data-aos="zoom-in"
+          data-aos-delay="100">
+          <img src="../images/about.png" alt="DNK Skills Classroom"
+            class="w-full h-auto object-contain hover:scale-105 transition-transform duration-700" width="850"
+            height="650"
+            onerror="this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80'">
         </div>
       </div>
     </section>
@@ -131,23 +157,30 @@
     <section class="bg-card py-20 border-y border-border">
       <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
         <!-- Mission -->
-        <div class="bg-background border border-border p-8 md:p-10 rounded-2xl hover:shadow-xl transition-shadow" data-aos="fade-up">
+        <div class="bg-background border border-border p-8 md:p-10 rounded-2xl hover:shadow-xl transition-shadow"
+          data-aos="fade-up">
           <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
             <i data-lucide="target" class="text-primary w-6 h-6" stroke-width="2.5"></i>
           </div>
           <h3 class="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
           <p class="text-muted-foreground leading-relaxed text-[17px]">
-            At DNK SKILLS, our mission is to make technology simple, accessible, and practical for everyone. We aim to empower developers and creators through hands-on learning, real-world content, and a supportive digital community, helping them grow, build, and innovate with confidence.
+            At DNK SKILLS, our mission is to make technology simple, accessible, and practical for everyone. We aim to
+            empower developers and creators through hands-on learning, real-world content, and a supportive digital
+            community, helping them grow, build, and innovate with confidence.
           </p>
         </div>
         <!-- Vision -->
-        <div class="bg-background border border-border p-8 md:p-10 rounded-2xl hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-background border border-border p-8 md:p-10 rounded-2xl hover:shadow-xl transition-shadow"
+          data-aos="fade-up" data-aos-delay="100">
           <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
             <i data-lucide="eye" class="text-primary w-6 h-6" stroke-width="2.5"></i>
           </div>
           <h3 class="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
           <p class="text-muted-foreground leading-relaxed text-[17px]">
-            At DNK SKILLS, our vision is to become a leading digital platform where learning meets innovation. We strive to create a world where anyone, anywhere, can unlock their potential through technology. By combining education, creativity, and community, we aim to shape the future of digital learning and empower the next generation of tech leaders.
+            At DNK SKILLS, our vision is to become a leading digital platform where learning meets innovation. We strive
+            to create a world where anyone, anywhere, can unlock their potential through technology. By combining
+            education, creativity, and community, we aim to shape the future of digital learning and empower the next
+            generation of tech leaders.
           </p>
         </div>
       </div>
@@ -157,17 +190,20 @@
     <section class="py-12 bg-background">
       <div class="max-w-7xl mx-auto px-4 w-full" data-aos="fade-up">
         <div class="bg-primary text-primary-foreground rounded-2xl p-8 shadow-xl border border-primary/20">
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-around gap-12 sm:gap-8 text-center divide-y sm:divide-y-0 lg:divide-x divide-primary-foreground/20">
-            
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-around gap-12 sm:gap-8 text-center divide-y sm:divide-y-0 lg:divide-x divide-primary-foreground/20">
+
             <div class="flex flex-col items-center gap-4 w-full pt-0 border-t-0">
-              <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center p-2 shadow-sm text-[#E31E24]">
+              <div
+                class="w-16 h-16 bg-white rounded-full flex items-center justify-center p-2 shadow-sm text-[#E31E24]">
                 <i data-lucide="shield-check" class="w-9 h-9" stroke-width="2.5"></i>
               </div>
               <span class="font-bold tracking-wide text-lg">ISO Certified</span>
             </div>
 
             <div class="flex flex-col items-center gap-4 w-full pt-8 sm:pt-0">
-              <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center p-2 shadow-sm text-[#D87D32]">
+              <div
+                class="w-16 h-16 bg-white rounded-full flex items-center justify-center p-2 shadow-sm text-[#D87D32]">
                 <i data-lucide="award" class="w-9 h-9" stroke-width="2.5"></i>
               </div>
               <span class="font-bold tracking-wide text-lg">MSME Registered</span>
@@ -181,7 +217,8 @@
             </div>
 
             <div class="flex flex-col items-center gap-4 w-full pt-8 sm:pt-0">
-              <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center p-2 shadow-sm text-[#1a56db]">
+              <div
+                class="w-16 h-16 bg-white rounded-full flex items-center justify-center p-2 shadow-sm text-[#1a56db]">
                 <i data-lucide="globe" class="w-9 h-9" stroke-width="2.5"></i>
               </div>
               <span class="font-bold tracking-wide text-lg">IAF Certified</span>
@@ -203,48 +240,59 @@
 
       <div class="grid md:grid-cols-3 gap-8 text-left">
         <!-- Value 1 -->
-        <div class="bg-card border border-border p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100">
+        <div
+          class="bg-card border border-border p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl"
+          data-aos="fade-up" data-aos-delay="100">
           <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-5">
             <i data-lucide="lightbulb" class="text-primary w-6 h-6" stroke-width="2.5"></i>
           </div>
           <h3 class="text-xl font-bold text-foreground mb-3">Innovation</h3>
           <p class="text-muted-foreground leading-relaxed text-[16px]">
-            We constantly evolve our curriculum and solutions to stay ahead of industry trends, ensuring our students and clients always work with cutting-edge technologies.
+            We constantly evolve our curriculum and solutions to stay ahead of industry trends, ensuring our students
+            and clients always work with cutting-edge technologies.
           </p>
         </div>
         <!-- Value 2 -->
-        <div class="bg-card border border-border p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
+        <div
+          class="bg-card border border-border p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl"
+          data-aos="fade-up" data-aos-delay="200">
           <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-5">
             <i data-lucide="users" class="text-primary w-6 h-6" stroke-width="2.5"></i>
           </div>
           <h3 class="text-xl font-bold text-foreground mb-3">Collaboration</h3>
           <p class="text-muted-foreground leading-relaxed text-[16px]">
-            Success comes from teamwork - with our students, clients, and partners. We believe in building relationships that foster mutual growth.
+            Success comes from teamwork - with our students, clients, and partners. We believe in building relationships
+            that foster mutual growth.
           </p>
         </div>
         <!-- Value 3 -->
-        <div class="bg-card border border-border p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl" data-aos="fade-up" data-aos-delay="300">
+        <div
+          class="bg-card border border-border p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl"
+          data-aos="fade-up" data-aos-delay="300">
           <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-5">
             <i data-lucide="award" class="text-primary w-6 h-6" stroke-width="2.5"></i>
           </div>
           <h3 class="text-xl font-bold text-foreground mb-3">Excellence</h3>
           <p class="text-muted-foreground leading-relaxed text-[16px]">
-            We set high standards for ourselves and our community, delivering quality in every interaction, whether it's a training session or software solution.
+            We set high standards for ourselves and our community, delivering quality in every interaction, whether it's
+            a training session or software solution.
           </p>
         </div>
       </div>
     </section>
- 
+
   </main>
   <!-- Footer -->
   <footer class="bg-foreground text-primary-foreground py-12 border-t border-border">
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-      
+
       <!-- Brand & Description -->
       <div class="space-y-4">
-        <a href="../index.html#home" class="flex items-center gap-2 font-bold text-2xl group transition-transform active:scale-95">
+        <a href="../index.html#home"
+          class="flex items-center gap-2 font-bold text-2xl group transition-transform active:scale-95">
           <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
-          <span class="font-extrabold tracking-wide text-white" style="font-family: Arial, sans-serif;">DNK SKILLS</span>
+          <span class="font-extrabold tracking-wide text-white" style="font-family: Arial, sans-serif;">DNK
+            SKILLS</span>
         </a>
         <p class="text-[15px] text-muted-foreground leading-relaxed mt-2">
           Empowering the future through innovative education and technology solutions.
@@ -255,12 +303,18 @@
       <div>
         <h4 class="font-bold text-lg text-white mb-5">Training Programs</h4>
         <ul class="space-y-3 text-[15px] text-muted-foreground">
-          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Web Development</a></li>
-          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> App Development</a></li>
-          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Data Science</a></li>
-          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> DSA with C++</a></li>
-          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> DSA with Java</a></li>
-          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> AI / ML</a></li>
+          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> Web Development</a></li>
+          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> App Development</a></li>
+          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> Data Science</a></li>
+          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> DSA with C++</a></li>
+          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> DSA with Java</a></li>
+          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> AI / ML</a></li>
         </ul>
       </div>
 
@@ -268,12 +322,19 @@
       <div>
         <h4 class="font-bold text-lg text-white mb-5">Courses</h4>
         <ul class="space-y-3 text-[15px] text-muted-foreground">
-          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> C Programming</a></li>
-          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> C++ Programming</a></li>
-          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Python Programming</a></li>
-          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Java Programming</a></li>
-          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> JavaScript</a></li>
-          <li class="pt-2"><a href="../courses/index.html" class="text-primary hover:text-primary-foreground transition-colors flex items-center gap-2 font-semibold">View More <i data-lucide="arrow-right" class="w-4 h-4"></i></a></li>
+          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> C Programming</a></li>
+          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> C++ Programming</a></li>
+          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> Python Programming</a></li>
+          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> Java Programming</a></li>
+          <li><a href="../courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                data-lucide="chevron-right" class="w-4 h-4"></i> JavaScript</a></li>
+          <li class="pt-2"><a href="../courses/index.html"
+              class="text-primary hover:text-primary-foreground transition-colors flex items-center gap-2 font-semibold">View
+              More <i data-lucide="arrow-right" class="w-4 h-4"></i></a></li>
         </ul>
       </div>
 
@@ -287,7 +348,8 @@
           </li>
           <li class="flex items-center gap-3">
             <i data-lucide="mail" class="w-5 h-5 text-primary shrink-0"></i>
-            <a href="mailto:support@dnkskill.com" class="hover:text-primary transition-colors opacity-90">support@dnkskill.com</a>
+            <a href="mailto:support@dnkskill.com"
+              class="hover:text-primary transition-colors opacity-90">support@dnkskill.com</a>
           </li>
           <li class="flex items-center gap-3">
             <i data-lucide="phone" class="w-5 h-5 text-primary shrink-0"></i>
@@ -296,7 +358,7 @@
         </ul>
       </div>
 
-      
+
 
     </div>
 
@@ -318,13 +380,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
