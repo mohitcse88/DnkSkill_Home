@@ -7,8 +7,8 @@
   <meta name="description" content="Master Microsoft Excel from basics to advanced formulas, pivot tables, and data analysis. ISO Certified Training for professionals.">
   
   <!-- Favicons -->
-  <link rel="icon" type="image/png" href="../../images/favicon.png?v=3">
-  <link rel="apple-touch-icon" href="../../images/favicon.png?v=3">
+  <link rel="icon" type="image/png" href="../../images/favi.png?v=3">
+  <link rel="apple-touch-icon" href="../../images/favi.png?v=3">
   
   <link rel="stylesheet" href="../../css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -70,20 +70,53 @@
 </head>
 <body class="min-h-screen bg-background text-foreground overflow-x-hidden w-full">
   <!-- Header -->
+    <!-- Header -->
   <header>
-    <nav class="sticky top-0 z-50 bg-background border-b border-border">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="../../index.html" class="flex items-center gap-2 font-bold text-xl text-foreground">
-        <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
-        <span class="font-extrabold tracking-wide text-foreground" style="font-family: Arial, sans-serif; font-size: 22px;">DNK SKILLS</span>
+    <nav class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm relative">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between relative">
+      <!-- Logo (Left) -->
+      <a href="../../index.html#home" class="flex items-center gap-[0px] group shrink-0 relative z-10 transition-transform active:scale-95">
+        <img src="../../images/favicon.png" alt="Logo" class="h-[38px] w-auto object-contain block shrink-0">
+        <span class="font-black tracking-tighter" style="font-family: 'Montserrat', sans-serif; font-weight: 800; color: #000000; font-size: 26px; letter-spacing: 1px; word-spacing: -0.02em; line-height: 1; transform: translateY(2.5px);">DNK SKILLS</span>
       </a>
-      <div class="hidden md:flex items-center gap-8">
-        <a href="../../index.html" class="text-foreground hover:text-primary transition-colors font-semibold">Home</a>
-        <a href="../../training/index.html" class="text-foreground hover:text-primary transition-colors font-semibold">Training</a>
-        <a href="../../courses/index.html" class="text-primary hover:text-primary transition-colors font-semibold">Courses</a>
-        <a href="../../about/index.html" class="text-foreground hover:text-primary transition-colors font-semibold">About</a>
-        <a href="#enrollMenu" class="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity" onclick="document.getElementById('enrollmentForm').scrollIntoView({behavior: 'smooth'})">Start Learning ></a>
+
+      <!-- Navigation Links (Mathematical Center) -->
+      <div class="hidden md:flex items-center gap-10 absolute md:left-1/2 md:-translate-x-1/2">
+        <a href="../../index.html#home" class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">Home</a>
+        <a href="../../training/index.html" class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">Training</a>
+        <a href="../../courses/index.html" class="text-primary hover:text-primary transition-colors font-bold text-[15px]">Courses</a>
+        <a href="../../about/index.html" class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">About</a>
       </div>
+
+      <!-- CTA Button (Right) -->
+      <div class="hidden md:block shrink-0 relative z-10">
+        <a href="../../index.html#courses" class="group relative bg-[#10b981] text-white px-6 py-2.5 rounded-lg font-bold text-[15px] hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 ring-2 ring-emerald-500/20 hover:ring-emerald-500/50 ring-offset-2 ring-offset-white overflow-hidden z-10">
+          <span class="relative z-10 flex items-center gap-1.5">
+            Start Learning &gt;
+          </span>
+          <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-50 transition-colors">
+        <i id="menu-icon" data-lucide="menu" class="w-6 h-6 text-slate-900"></i>
+        <i id="close-icon" data-lucide="x" class="w-6 h-6 text-slate-900 hidden"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-50 px-4 py-6 flex-col gap-4 shadow-xl">
+      <a href="../../index.html#home" class="text-lg font-bold text-slate-800 mobile-link">Home</a>
+      <a href="../../training/index.html" class="text-lg font-bold text-slate-800 mobile-link">Training</a>
+      <a href="../../courses/index.html" class="text-lg font-bold text-primary mobile-link">Courses</a>
+      <a href="../../about/index.html" class="text-lg font-bold text-slate-800 mobile-link">About</a>
+      <a href="../../index.html#courses" class="group relative mt-4 bg-[#10b981] text-white px-6 py-4 rounded-xl font-bold text-center shadow-lg shadow-primary/20 hover:-translate-y-1 transition-all duration-300 ring-2 ring-emerald-500/20 hover:ring-emerald-500/50 ring-offset-4 ring-offset-white overflow-hidden z-10">
+        <span class="relative z-10">
+          Start Learning &gt;
+        </span>
+        <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
+      </a>
     </div>
   </header>
 
@@ -92,8 +125,8 @@
       <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
       <div class="max-w-7xl mx-auto px-4 relative z-10" data-aos="fade-up">
         <!-- Breadcrumbs -->
-        <nav class="flex items-center gap-2 text-sm font-medium mb-6 text-primary-foreground/80" aria-label="Breadcrumb">
-          <div class="flex items-center gap-2 overflow-x-auto whitespace-nowrap hide-scrollbar" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <nav class="flex items-center gap-4 text-sm font-medium mb-6 text-primary-foreground/80" aria-label="Breadcrumb">
+          <div class="flex items-center gap-4 overflow-x-auto whitespace-nowrap hide-scrollbar" itemscope itemtype="https://schema.org/BreadcrumbList">
             <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
               <a itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="../../index.html" href="../../index.html" class="hover:text-white transition-colors flex items-center gap-1">
                 <i data-lucide="home" class="w-4 h-4"></i> <span itemprop="name">Home</span>
@@ -115,7 +148,7 @@
           </div>
         </nav>
 
-        <div class="flex items-center gap-3 mb-4 text-xs md:text-sm font-semibold tracking-wider text-primary-foreground/80 uppercase">
+        <div class="flex items-center gap-4 mb-4 text-xs md:text-sm font-semibold tracking-wider text-primary-foreground/80 uppercase">
           <span class="bg-white/10 px-3 py-1 rounded-full flex items-center gap-1.5"><i data-lucide="video" class="w-4 h-4 text-[#ffbd2e]"></i> Live Classes</span>
           <span>•</span>
           <span>Advanced Excel</span>
@@ -215,7 +248,7 @@
                 <p class="text-[14px] text-[#64748b] mt-1 leading-snug">
                   (18% GST already included which is paid to the Government)
                 </p>
-                <div class="flex items-center gap-3 mt-3 flex-wrap">
+                <div class="flex items-center gap-4 mt-3 flex-wrap">
                   <span class="text-[32px] font-extrabold text-[#0f172a]">₹ 1499</span>
                   <span class="text-[18px] text-[#94a3b8] line-through font-medium">₹ 6,999</span>
                   <span class="bg-emerald-50 text-emerald-700 text-[11px] font-bold px-2 py-0.5 rounded-[4px] border border-emerald-100 uppercase tracking-tight">78% OFF</span>
@@ -267,8 +300,8 @@
   <footer class="bg-foreground text-primary-foreground py-12 border-t border-border">
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
       <div class="space-y-4">
-        <div class="flex items-center gap-2 font-bold text-2xl">
-          <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
+        <div class="flex items-center gap-4 font-bold text-2xl">
+          <img src="../../images/favi.png" alt="DNK SKILLS Logo" class="w-[70px] h-[70px] object-contain shrink-0">
           <span class="font-extrabold tracking-wide text-white">DNK SKILLS</span>
         </div>
         <p class="text-[15px] text-muted-foreground leading-relaxed mt-2">Empowering the future through innovative education.</p>
@@ -276,9 +309,10 @@
       <div>
         <h4 class="font-bold text-lg text-white mb-5">Quick Links</h4>
         <ul class="space-y-3 text-[15px] text-muted-foreground">
-          <li><a href="../../index.html" class="hover:text-primary transition-colors">Home</a></li>
+          <li><a href="../../index.html" class="text-slate-600 hover:text-primary transition-colors font-bold text-[15px]">Home</a></li>
           <li><a href="../../training/index.html" class="hover:text-primary transition-colors">Training</a></li>
           <li><a href="../../courses/index.html" class="hover:text-primary transition-colors">Courses</a></li>
+
           <li><a href="../../about/index.html" class="hover:text-primary transition-colors">About</a></li>
         </ul>
       </div>
@@ -297,6 +331,21 @@
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
